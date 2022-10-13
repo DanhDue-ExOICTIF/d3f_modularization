@@ -1,0 +1,28 @@
+[submodule "d3f_core"]
+	path = d3f_core
+	url = git@github.com:DanhDue-ExOICTIF/d3f_core.git
+	branch = develop
+[submodule "d3f_dependency_manager"]
+	path = d3f_dependency_manager
+	url = git@github.com:DanhDue-ExOICTIF/d3f_dependency_manager.git
+	branch = develop
+[submodule "d3f_inapp_purchase"]
+	path = d3f_inapp_purchase
+	url = git@github.com:DanhDue-ExOICTIF/d3f_inapp_purchase.git
+	branch = develop
+[submodule "d3f_login"]
+	path = d3f_login
+	url = git@github.com:DanhDue-ExOICTIF/d3f_login.git
+	branch = develop
+[submodule "d3f_modular"]
+	path = d3f_modular
+	url = git@github.com:DanhDue-ExOICTIF/d3f_modular.git
+	branch = develop
+[submodule "d3f_networking"]
+	path = d3f_networking
+	url = git@github.com:DanhDue-ExOICTIF/d3f_networking.git
+	branch = develop
+[submodule "d3f_shared"]
+	path = d3f_shared
+	url = git@github.com:DanhDue-ExOICTIF/d3f_shared.git
+	branch = develop
