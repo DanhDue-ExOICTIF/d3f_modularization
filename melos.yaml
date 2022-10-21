@@ -50,5 +50,5 @@ scripts:
       melos exec \
       -- fluttergen -c pubspec.yaml
     select-package:
-      depends-on: 'build_runner'
+      depends-on: 'flutter_gen_runner'
     
