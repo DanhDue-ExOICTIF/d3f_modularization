@@ -38,9 +38,17 @@ scripts:
     select-package:
       dir-exists: test
 
-  modular:build_runner:
+  build_runner:
     run: |
       melos exec \
       -- fvm flutter pub run build_runner build --delete-conflicting-outputs
     select-package:
       depends-on: 'build_runner'
+
+  fluttergen:
+    run: |
+      melos exec \
+      -- fluttergen -c pubspec.yaml
+    select-package:
+      depends-on: 'build_runner'
+    
