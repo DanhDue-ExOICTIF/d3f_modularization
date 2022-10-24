@@ -51,4 +51,5 @@ scripts:
       -- fluttergen -c pubspec.yaml
     select-package:
       depends-on: 'flutter_gen_runner'
-    
+
+  unchangeGitModules: bash ./scripts/git/unchangeGitModules.sh
