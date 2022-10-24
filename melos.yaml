@@ -9,10 +9,6 @@ packages:
   - d3f_networking/**
   - d3f_shared/**
 
-ide:
-  intellij: true
-  vscode: true
-
 command:
   bootstrap:
     # NOTE: https://github.com/invertase/melos/issues/117#issuecomment-1125224468
