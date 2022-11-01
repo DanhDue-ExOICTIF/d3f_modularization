@@ -94,3 +94,8 @@ scripts:
       ignore: 
         - d3f_modularization
 
+  gitStatus:
+    run: |
+      melos exec \
+      -- git status
+    description: check the project status for each module.
