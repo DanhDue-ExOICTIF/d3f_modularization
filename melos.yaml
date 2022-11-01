@@ -94,6 +94,12 @@ scripts:
       ignore: 
         - d3f_modularization
 
+  gitInitModularRemotes:
+    run: |
+      melos exec \
+      -- git remote-init
+    description: add the modular remote to each module.
+
   gitStatus:
     run: |
       melos exec \
