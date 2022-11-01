@@ -48,7 +48,7 @@
             "type": "dart",
             "program": "${workspaceFolder}/d3f_inapp_purchase/lib/main.dart",
             "args": [
-                "--dart-define", "DART_DEFINES_APP_NAME=Modular(Dev)",
+                "--dart-define", "DART_DEFINES_APP_NAME=InappPurchase(Dev)",
                 "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
                 "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
             ]
@@ -60,7 +60,7 @@
             "type": "dart",
             "program": "${workspaceFolder}/d3f_inapp_purchase/lib/main.dart",
             "args": [
-                "--dart-define", "DART_DEFINES_APP_NAME=Modular(Dev)",
+                "--dart-define", "DART_DEFINES_APP_NAME=InappPurchase(Stg)",
                 "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
                 "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
             ]
@@ -72,7 +72,7 @@
             "type": "dart",
             "program": "${workspaceFolder}/d3f_inapp_purchase/lib/main.dart",
             "args": [
-                "--dart-define", "DART_DEFINES_APP_NAME=Modular(Dev)",
+                "--dart-define", "DART_DEFINES_APP_NAME=InappPurchase",
                 "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
                 "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
             ]
@@ -84,7 +84,7 @@
             "type": "dart",
             "program": "${workspaceFolder}/d3f_login/lib/main.dart",
             "args": [
-                "--dart-define", "DART_DEFINES_APP_NAME=Modular(Dev)",
+                "--dart-define", "DART_DEFINES_APP_NAME=Login(Dev)",
                 "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
                 "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
             ]
@@ -96,7 +96,7 @@
             "type": "dart",
             "program": "${workspaceFolder}/d3f_login/lib/main.dart",
             "args": [
-                "--dart-define", "DART_DEFINES_APP_NAME=Modular(Dev)",
+                "--dart-define", "DART_DEFINES_APP_NAME=Login(Stg)",
                 "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
                 "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
             ]
@@ -108,7 +108,7 @@
             "type": "dart",
             "program": "${workspaceFolder}/d3f_login/lib/main.dart",
             "args": [
-                "--dart-define", "DART_DEFINES_APP_NAME=Modular(Dev)",
+                "--dart-define", "DART_DEFINES_APP_NAME=Login",
                 "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
                 "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
             ]
