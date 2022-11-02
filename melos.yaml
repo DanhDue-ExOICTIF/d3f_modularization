@@ -87,9 +87,7 @@ scripts:
   upgradeAll:
     run: |
       melos exec \
-      -- fvm flutter pub upgrade d3f_shared \
-      -- fvm flutter pub upgrade d3f_networking \
-      -- fvm flutter pub upgrade d3f_core
+      -- "fvm flutter pub upgrade d3f_shared && fvm flutter pub upgrade d3f_networking && fvm flutter pub upgrade d3f_core"
     select-package:
       ignore: 
         - d3f_modularization
@@ -105,3 +103,7 @@ scripts:
       melos exec \
       -- git status
     description: check the project status for each module.
+
+  addSSHKey: bash ./scripts/add_ssh_key_to_keychain.sh
+
+  genTestCoverage: bash ./scripts/combine_coverage.sh
