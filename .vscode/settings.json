@@ -52,5 +52,7 @@
       "**/*.iml": true,
       "**/.gitremotes": true,
       "**/.metadata": true
-    }
+    },
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "dart.lineLength": 99
 }
