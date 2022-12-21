@@ -51,5 +51,9 @@
     {
         "key": "alt+cmd+s",
         "command": "-saveAll"
+    },
+    {
+        "key": "ctrl+shift+cmd+a",
+        "command": "workbench.action.toggleAuxiliaryBar"
     }
 ]
