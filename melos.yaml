@@ -17,16 +17,49 @@ command:
     usePubspecOverrides: true
 
 scripts:
-  pub:upgrade:
+  genenrateAlls:
     run: |
-      melos exec -- fvm flutter pub upgrade
-      
-  pub:get:
+      melos exec -- "fvm flutter pub get \
+      && fvm flutter pub run build_runner build --delete-conflicting-outputs \
+      && fluttergen -c pubspec.yaml \
+      && get generate locales assets/locales"
+    select-package:
+      depends-on: "build_runner"
+    description: generate freezed models, images, colors, locales.
+
+  pubGet:
     run: |
       melos exec -- fvm flutter pub get
     select-package:
-      ignore: 
+      ignore:
         - d3f_modularization
+
+  buildRunner:
+    run: |
+      melos exec \
+      -- fvm flutter pub run build_runner build --delete-conflicting-outputs
+    select-package:
+      depends-on: "build_runner"
+
+  flutterGen:
+    run: |
+      melos exec \
+      -- fluttergen -c pubspec.yaml
+    select-package:
+      depends-on: "flutter_gen_runner"
+
+  generateLocales:
+    run: |
+      melos exec \
+      -- get generate locales assets/locales
+    select-package:
+      ignore:
+        - d3f_modularization
+    description: generate locales.
+
+  pub:upgrade:
+    run: |
+      melos exec -- fvm flutter pub upgrade
 
   analyze: dart analyze
 
@@ -37,24 +70,10 @@ scripts:
     select-package:
       dir-exists: test
 
-  build_runner:
-    run: |
-      melos exec \
-      -- fvm flutter pub run build_runner build --delete-conflicting-outputs
-    select-package:
-      depends-on: 'build_runner'
-
-  fluttergen:
-    run: |
-      melos exec \
-      -- fluttergen -c pubspec.yaml
-    select-package:
-      depends-on: 'flutter_gen_runner'
-
   unchangeGitModules: bash ./scripts/git/unchangeGitModules.sh
 
   fvmUse:
-    run:  |
+    run: |
       melos exec \
       -- fvm use 3.3.9
     description: sync the Flutter SDK version for all modules.
@@ -83,13 +102,13 @@ scripts:
     run: |
       melos exec \
       -- fvm flutter pub upgrade d3f_shared
-  
+
   upgradeAll:
     run: |
       melos exec \
       -- "fvm flutter pub upgrade d3f_shared && fvm flutter pub upgrade d3f_networking && fvm flutter pub upgrade d3f_core"
     select-package:
-      ignore: 
+      ignore:
         - d3f_modularization
 
   gitInitModularRemotes:
@@ -107,3 +126,7 @@ scripts:
   addSSHKey: bash ./scripts/add_ssh_key_to_keychain.sh
 
   genTestCoverage: bash ./scripts/combine_coverage.sh
+
+  installTools:
+    run: bash ./scripts/install_tools.sh
+    description: install some necessary tools such as fvm, flutter_gen, get_cli.

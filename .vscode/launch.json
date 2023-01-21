@@ -1,11 +1,8 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "d3f_modular",
+            "name": "Modular(Dev)",
             "cwd": "${workspaceFolder}/d3f_modular",
             "request": "launch",
             "type": "dart",
@@ -13,11 +10,12 @@
             "args": [
                 "--dart-define", "DART_DEFINES_APP_NAME=Modular(Dev)",
                 "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
-                "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
+                "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/",
+                "--debug"
             ]
         },
         {
-            "name": "d3f_modular_stg",
+            "name": "Modular(Stg)",
             "cwd": "${workspaceFolder}/d3f_modular",
             "request": "launch",
             "type": "dart",
@@ -30,7 +28,7 @@
             ]
         },
         {
-            "name": "d3f_modular_prd",
+            "name": "Modular",
             "cwd": "${workspaceFolder}/d3f_modular",
             "request": "launch",
             "type": "dart",
@@ -42,7 +40,7 @@
             ]
         },
         {
-            "name": "d3f_inapp_purchase",
+            "name": "InappPurchase(Dev)",
             "cwd": "${workspaceFolder}/d3f_inapp_purchase",
             "request": "launch",
             "type": "dart",
@@ -50,35 +48,37 @@
             "args": [
                 "--dart-define", "DART_DEFINES_APP_NAME=InappPurchase(Dev)",
                 "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
-                "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
+                "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/",
+                "--debug"
             ]
         },
         {
-            "name": "d3f_inapp_purchase_stg",
+            "name": "InappPurchase(Stg)",
             "cwd": "${workspaceFolder}/d3f_inapp_purchase",
             "request": "launch",
             "type": "dart",
             "program": "${workspaceFolder}/d3f_inapp_purchase/lib/main.dart",
             "args": [
                 "--dart-define", "DART_DEFINES_APP_NAME=InappPurchase(Stg)",
-                "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
-                "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
+                "--dart-define", "DART_DEFINES_APP_SUFFIX=.stg",
+                "--dart-define", "DART_DEFINES_BASE_URL=https://stg.danhdue.com/",
+                "--profile"
             ]
         },
         {
-            "name": "d3f_inapp_purchase_prd",
+            "name": "InappPurchase",
             "cwd": "${workspaceFolder}/d3f_inapp_purchase",
             "request": "launch",
             "type": "dart",
             "program": "${workspaceFolder}/d3f_inapp_purchase/lib/main.dart",
             "args": [
                 "--dart-define", "DART_DEFINES_APP_NAME=InappPurchase",
-                "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
-                "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
+                "--dart-define", "DART_DEFINES_BASE_URL=https://danhdue.com/",
+                "--release"
             ]
         },
         {
-            "name": "d3f_login",
+            "name": "Login(dev)",
             "cwd": "${workspaceFolder}/d3f_login",
             "request": "launch",
             "type": "dart",
@@ -86,31 +86,33 @@
             "args": [
                 "--dart-define", "DART_DEFINES_APP_NAME=Login(Dev)",
                 "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
-                "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
+                "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/",
+                "--debug"
             ]
         },
         {
-            "name": "d3f_login_stg",
+            "name": "Login(stg)",
             "cwd": "${workspaceFolder}/d3f_login",
             "request": "launch",
             "type": "dart",
             "program": "${workspaceFolder}/d3f_login/lib/main.dart",
             "args": [
                 "--dart-define", "DART_DEFINES_APP_NAME=Login(Stg)",
-                "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
-                "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
+                "--dart-define", "DART_DEFINES_APP_SUFFIX=.stg",
+                "--dart-define", "DART_DEFINES_BASE_URL=https://stg.danhdue.com/",
+                "--profile"
             ]
         },
         {
-            "name": "d3f_login_prd",
+            "name": "Login",
             "cwd": "${workspaceFolder}/d3f_login",
             "request": "launch",
             "type": "dart",
             "program": "${workspaceFolder}/d3f_login/lib/main.dart",
             "args": [
                 "--dart-define", "DART_DEFINES_APP_NAME=Login",
-                "--dart-define", "DART_DEFINES_APP_SUFFIX=.dev",
-                "--dart-define", "DART_DEFINES_BASE_URL=https://dev.danhdue.com/"
+                "--dart-define", "DART_DEFINES_BASE_URL=https://danhdue.com/",
+                "--release"
             ]
         }
     ]
